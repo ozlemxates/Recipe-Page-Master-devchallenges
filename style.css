@@ -26,7 +26,7 @@ label p {
 
 header p {
     position: relative;
-    padding-left: 30px; /* Noktaların sol tarafından boşluk bırakmak için */
+    padding-left: 30px;
 }
 
 header p:before {
@@ -43,7 +43,6 @@ header p:before {
 
 h7 {
     color: #BDBDBD;
-
 }
 
 input[type=checkbox] {
@@ -132,6 +131,5 @@ footer {
     display: flex;
     justify-content: center;
     color: #828282;
-
 }
 
