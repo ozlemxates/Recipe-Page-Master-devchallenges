@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    margin: 52px 237px 215px 234px;
+}
+
+picture img {
+    height: 470px;
+    width: 969px;
+}
+
+.container {
+    width: 637px;
+}
+
+label p {
+    margin-top: -24px;
+    margin-left: 32px;
+}
+
+.flex {
+    display: flex;
+}
+
+header p {
+    position: relative;
+    padding-left: 30px; /* Noktaların sol tarafından boşluk bırakmak için */
+}
+
+header p:before {
+    content: "• • •\A • • •";
+    font-size: 12px;
+    line-height: 0.5;
+    color: #C4C4C4;
+    position: absolute;
+    display: inline-block;
+    white-space: pre-wrap;
+    top: 0;
+    left: 0;
+}
+
+h7 {
+    color: #BDBDBD;
+
+}
+
+input[type=checkbox] {
+    width: 21px;
+    height: 21px;
+    border: 1px solid;
+    border-color: #828282;
+    border-radius: 4px;
+    /* border radius çalışmıyor */
+}
+
+span {
+    font-weight: 700;
+}
+
+form, .instructions p {
+    color: #333333;
+}
+
+.instructions {
+    counter-reset:counter;
+}
+
+.instructions p {
+    position: relative;
+    margin: 51px;
+}
+
+.instructions p::before {
+    content:counter(counter); 
+    counter-increment: counter;
+    position: absolute;
+    left: -47px;
+    background-color: #F2994A;
+    width: 36px;
+    height: 36px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.box {
+    background: #FFFFFF;
+    position: absolute;
+    width: 216px;
+    height: 367px;
+    left: 984px;
+    top: 711px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 57px 51px 49px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 6px;
+}
+
+.material-symbols-outlined {
+    font-size: 27px;
+    color: #F2994A;
+}
+
+.time, .logo{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.txt-grey {
+    color: #BDBDBD;
+}
+
+.txt-orange {
+    color: #F2994A;
+}
+
+.txt-dark {
+    color: #333333;
+}
+
+footer {
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+    color: #828282;
+
+}
+
