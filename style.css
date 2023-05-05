@@ -15,6 +15,10 @@ picture img {
     width: 637px;
 }
 
+.upper {
+    display: flex;
+}
+
 label p {
     margin-top: -24px;
     margin-left: 32px;
@@ -22,6 +26,7 @@ label p {
 
 .flex {
     display: flex;
+    flex-direction: column;
 }
 
 header p {
@@ -86,13 +91,17 @@ form, .instructions p {
     border-radius: 6px;
 }
 
+section {
+    position: relative;
+}
+
 .box {
     background: #FFFFFF;
     position: absolute;
     width: 216px;
     height: 367px;
     left: 984px;
-    top: 711px;
+    top: 675px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 57px 51px 49px 40px;
@@ -127,9 +136,35 @@ form, .instructions p {
 }
 
 footer {
-    margin-top: 93px;
+    margin-top: 94px;
     display: flex;
     justify-content: center;
     color: #828282;
 }
 
+@media only screen and (max-width:768px) {
+
+    main {
+        margin: 0;
+    }
+
+    .upper {
+        flex-direction: column-reverse;
+    }
+
+    .box {
+        left: 11px;
+        top: 399px;
+
+        width: 131px;
+        height: 26px;
+        flex-direction: row;
+    }
+
+    picture img {
+        width: 352px;
+        height: 213.83px;
+        margin: auto 12px auto 11px;
+    }
+    
+}
