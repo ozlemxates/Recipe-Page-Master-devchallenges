@@ -2,8 +2,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-m: 'Montserrat', sans-serif;
+    --font-p: 'Playfair Display', serif;
+}
+
 main {
     margin: 52px 237px 215px 234px;
+    font-family: var(--font-m);
 }
 
 picture img {
@@ -29,9 +35,18 @@ label p {
     flex-direction: column;
 }
 
+header h1 {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: var(--font-p);
+}
+
 header p {
     position: relative;
     padding-left: 30px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
 }
 
 header p:before {
@@ -44,6 +59,17 @@ header p:before {
     white-space: pre-wrap;
     top: 0;
     left: 0;
+}
+
+h1 {
+    font-family: var(--font-p);
+}
+
+h2 {
+    font-family: var(--font-p);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 h7 {
@@ -125,14 +151,20 @@ section {
 
 .txt-grey {
     color: #BDBDBD;
+    font-weight: 700;
+    font-size: 10px;
 }
 
 .txt-orange {
     color: #F2994A;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .txt-dark {
     color: #333333;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 footer {
@@ -145,9 +177,13 @@ footer {
 @media only screen and (max-width:768px) {
 
     main {
-        margin: 0;
         width: 375px;
-        height: 3126px;
+        height: 3226px;
+        margin: auto 12px auto 11px;
+    }
+
+    header h1 {
+        font-size: 24px;
     }
 
     header p {
@@ -179,9 +215,9 @@ footer {
     }
 
     picture img {
-        width: 352px;
-        height: 213.83px;
-        margin: auto 12px auto 11px;
+        width: 409px;
+        /* it looks bad if the width is 352px */
+        height: 213px;
     }
 
     .container {
@@ -189,12 +225,32 @@ footer {
     }
 
     section {
-        width: 371px;
-        height: 587px;
+        width: 422px;
+        height: 701px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .instructions h1 {
+        font-size: 24px;
+    }
+
+    .instructions p {
+        font-size: 16px;
+    }
+
+    .instructions {
+        margin: auto 12px;
     }
 
     footer {
-        margin-top: 1420px;
+        margin-top: 1680px;
     }
     
 }
